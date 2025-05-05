@@ -1,9 +1,9 @@
-import FileUploader from "./components/FileUploader";
+import CVImprover from "./components/CVImprover";
 
 export default function Home() {
   return (
     <>
-      <FileUploader />
+      <CVImprover />
     </>
   );
 }
