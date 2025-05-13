@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
-import BackButton from "./BackButton";
+import BackButton from "./Buttons/BackButton";
 import FileSelector from "./FileSelector";
 import ErrorDisplay from "./ErrorDisplay";
 import FileDetails from "./FileDetails";
-import ImproveButton from "./ImproveButton";
+import ImproveButton from "./Buttons/ImproveButton";
 import ProgressIndicator from "./ProgressIndicator";
 import ResultViewer from "./ResultViewer";
 
@@ -152,15 +152,15 @@ const CVImprover = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen bg-gray-800 p-4">
-      <div className="bg-gray-700 rounded-xl p-8 max-w-1/2 w-full shadow-xl">
-        <h1 className="text-gray-100 text-center text-4xl font-bold mb-6">
+    <div className='flex flex-col justify-center items-center min-h-screen bg-gray-800 p-4'>
+      <div className='bg-gray-700 rounded-xl p-8 max-w-1/2 w-full shadow-xl'>
+        <h1 className='text-gray-100 text-center text-4xl font-bold mb-6'>
           CV Improver AI
         </h1>
 
         {aiStatus === "success" && <BackButton onClick={resetState} />}
 
-        <p className="text-gray-300 mb-6 text-center">
+        <p className='text-gray-300 mb-6 text-center'>
           Upload your CV and let Gemini AI enhance it with better wording,
           formatting, and impact
         </p>
